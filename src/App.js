@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-import getAllCharacters from './Services/characters';
+import { getAllCharacters, getCharacter } from './Services/characters';
+
+import Card from './components/Card';
 
 function App() {
   const [starWarsData, setStarWarsData] = useState([]);
@@ -13,23 +15,33 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       let response = await getAllCharacters(initialUrl + '/all.json');
-      console.log(response);
       setNextUrl(response.next);
       setPrevUrl(response.previous);
-      await loadingCharacters(response.results);
+      let character = await loadingCharacters(response);
       setLoading(false);
     }
     fetchData();
   }, []);
 
-  const loadingCharacters = async (data) => {
-    
+  const loadingCharacters = async data => {
+    let _starWarsData = await Promise.all(data.map(async character => {
+      let characterRecord = await getCharacter(initialUrl + '/id/' + character.id + '.json');
+      return characterRecord;
+    }))
+    setStarWarsData(_starWarsData);
   }
 
   return (
     <div className="App">
-      { loading ? <h1>Loading...</h1> : (
-        <h1>Data is fetched</h1>
+      { loading ? <h1>Loading...</h1> 
+      : (
+        <>
+          <div>
+            {starWarsData.map((character, i) => {
+              return <Card key={i} character={character} />
+            })}
+          </div>
+        </>
       )}
     </div>
   );
