@@ -3,7 +3,7 @@ import './App.css';
 
 import { getAllCharacters, getCharacter } from './Services/characters';
 
-import Card from './components/Card';
+import Card from './components/Card/Card';
 
 function App() {
   const [starWarsData, setStarWarsData] = useState([]);
