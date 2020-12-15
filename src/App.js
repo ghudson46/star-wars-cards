@@ -36,7 +36,7 @@ function App() {
       { loading ? <h1>Loading...</h1> 
       : (
         <>
-          <div>
+          <div className="grid-container">
             {starWarsData.map((character, i) => {
               return <Card key={i} character={character} />
             })}

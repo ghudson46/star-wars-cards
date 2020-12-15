@@ -1,20 +1,31 @@
 import React from 'react';
+import './Card.css';
 
 
 function Card({ character }) {
+    function getMasters(list) {
+        list.map(master => {
+            return master
+        })
+    }
+
     return (
-        <div className="card">
-            <div className="card_img">
-                <img src={character.image} alt={character.name} />
-            </div>
-            <div className="card_name">
-                <h3>{character.name}</h3>
-            </div>
-            <div className="card_species">
-                <p>{character.species}</p>
-            </div>
-            <div className="card_planet">
-                <p>{character.homeworld}</p>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src={character.image} alt={character.name} />
+                    <div className="overlay"><h1 className="front-text">{character.name}</h1></div>
+                </div>
+                <div class="flip-card-back">
+                    <h1>{character.name}</h1>
+                    <h2>{character.species}</h2>
+                    <h2>{character.homeworld}</h2>
+                    {character.masters && (
+                        <>
+                            <p>{character.name} was trained by {character.masters}</p>
+                        </>
+                    )}
+                </div>
             </div>
         </div>
     )
