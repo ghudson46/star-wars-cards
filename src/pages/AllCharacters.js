@@ -31,7 +31,7 @@ function AllCharacters() {
           { loading ? <h1>Loading...</h1> 
           : (
             <>
-              <div className="grid-container">
+              <div className="grid-container" style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
                 {starWarsData.map((character, i) => {
                   return <Card key={i} character={character} />
                 })}
