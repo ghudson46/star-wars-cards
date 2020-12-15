@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div className="App">
+    <img src='https://i.pinimg.com/originals/2f/48/54/2f4854e80863db8219a256c7a35bd034.png' alt='star wars logo' style={{alignItems: 'center', width: '50%', height: '30%', margin: '3rem 0'}} />
       { loading ? <h1>Loading...</h1> 
       : (
         <>
