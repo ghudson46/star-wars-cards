@@ -1,0 +1,37 @@
+.star-wars {
+    animation: fadeIn 2s ease-in;
+    /* Flexbox to center the entire element on the screen */
+    display: flex;
+    justify-content: center;
+    /* This is a magic number based on the context in which this snippet is used and effects the perspective */
+    height: 800px;
+    /* This sets allows us to transform the text on a 3D plane, and is somewhat a magic number */
+    perspective: 400px;
+    /* The rest is totally up to personal styling preferences */
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 400%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    text-align: justify;
+  }
+
+  h6 {
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+    color: #4bd5ee;
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    line-height: 1.35;
+    width: 14em;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        color: #000;
+    }
+    to {
+      color: #4bd5ee;
+    }
+  }

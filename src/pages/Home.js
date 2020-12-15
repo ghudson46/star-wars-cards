@@ -1,12 +1,13 @@
 import React from 'react';
 
+import './Home.css';
 
 function Home() {
     
     return (
-        <>
-            <h1 style={{color:'white'}}>Home page</h1>
-        </>
+        <div className='star-wars'>
+            <h6>A long time ago, in a galaxy far far away....</h6>
+        </div>
         
     )
 }
