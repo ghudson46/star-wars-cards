@@ -1,13 +1,9 @@
 import React from 'react';
 import './Card.css';
 
+import ListItem from '../ListItem/ListItem';
 
 function Card({ character }) {
-    function getMasters(list) {
-        list.map(master => {
-            return master
-        })
-    }
 
     return (
         <div class="flip-card">
@@ -18,13 +14,13 @@ function Card({ character }) {
                 </div>
                 <div class="flip-card-back">
                     <h1>{character.name}</h1>
-                    <h2>{character.species}</h2>
-                    <h2>{character.homeworld}</h2>
+                    <p>Species: {character.species}</p>
+                    <p>Home Planet: {character.homeworld}</p>
+                    <div style={{display: 'flex', justifyContent: 'flex-start'}}>
                     {character.masters && (
-                        <>
-                            <p>{character.name} was trained by {character.masters}</p>
-                        </>
+                        <ul>Masters</ul>
                     )}
+                    </div>
                 </div>
             </div>
         </div>
