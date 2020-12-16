@@ -1,6 +1,8 @@
 import React from 'react';
 import './Card.css';
 
+import ListItem from '../ListItem/ListItem';
+
 
 function Card({ character }) {
 
@@ -16,9 +18,12 @@ function Card({ character }) {
                     <h2>Species: {character.species}</h2>
                     <h2>Home Planet: {character.homeworld}</h2>
                     {character.masters && (
-                        <>
-                            <p>{character.name} was trained by {character.masters}</p>
-                        </>
+                        <div style={{display: 'flex', justifyContent: 'flex-start'}}>
+                           <ul>Masters</ul>
+                           {[character.masters].map((master, i) => {
+                               return <li>{master}</li>
+                           })}
+                        </div>
                     )}
                 </div>
             </div>
