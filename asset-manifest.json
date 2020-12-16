@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "//www.garretthudson.com/star-wars-cards/static/css/main.3d6dca3e.chunk.css",
-    "main.js": "//www.garretthudson.com/star-wars-cards/static/js/main.6ee14b7d.chunk.js",
-    "main.js.map": "//www.garretthudson.com/star-wars-cards/static/js/main.6ee14b7d.chunk.js.map",
-    "runtime-main.js": "//www.garretthudson.com/star-wars-cards/static/js/runtime-main.8ef3f78b.js",
-    "runtime-main.js.map": "//www.garretthudson.com/star-wars-cards/static/js/runtime-main.8ef3f78b.js.map",
-    "static/js/2.f12f25fd.chunk.js": "//www.garretthudson.com/star-wars-cards/static/js/2.f12f25fd.chunk.js",
-    "static/js/2.f12f25fd.chunk.js.map": "//www.garretthudson.com/star-wars-cards/static/js/2.f12f25fd.chunk.js.map",
-    "index.html": "//www.garretthudson.com/star-wars-cards/index.html",
-    "static/css/main.3d6dca3e.chunk.css.map": "//www.garretthudson.com/star-wars-cards/static/css/main.3d6dca3e.chunk.css.map",
-    "static/js/2.f12f25fd.chunk.js.LICENSE.txt": "//www.garretthudson.com/star-wars-cards/static/js/2.f12f25fd.chunk.js.LICENSE.txt"
+    "main.css": "/star-wars-cards/static/css/main.3d6dca3e.chunk.css",
+    "main.js": "/star-wars-cards/static/js/main.6ee14b7d.chunk.js",
+    "main.js.map": "/star-wars-cards/static/js/main.6ee14b7d.chunk.js.map",
+    "runtime-main.js": "/star-wars-cards/static/js/runtime-main.5a0339cb.js",
+    "runtime-main.js.map": "/star-wars-cards/static/js/runtime-main.5a0339cb.js.map",
+    "static/js/2.f12f25fd.chunk.js": "/star-wars-cards/static/js/2.f12f25fd.chunk.js",
+    "static/js/2.f12f25fd.chunk.js.map": "/star-wars-cards/static/js/2.f12f25fd.chunk.js.map",
+    "index.html": "/star-wars-cards/index.html",
+    "static/css/main.3d6dca3e.chunk.css.map": "/star-wars-cards/static/css/main.3d6dca3e.chunk.css.map",
+    "static/js/2.f12f25fd.chunk.js.LICENSE.txt": "/star-wars-cards/static/js/2.f12f25fd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ef3f78b.js",
+    "static/js/runtime-main.5a0339cb.js",
     "static/js/2.f12f25fd.chunk.js",
     "static/css/main.3d6dca3e.chunk.css",
     "static/js/main.6ee14b7d.chunk.js"
