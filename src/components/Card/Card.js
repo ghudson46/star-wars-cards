@@ -1,7 +1,6 @@
 import React from 'react';
 import './Card.css';
 
-import ListItem from '../ListItem/ListItem';
 
 function Card({ character }) {
 
@@ -14,13 +13,13 @@ function Card({ character }) {
                 </div>
                 <div class="flip-card-back">
                     <h1>{character.name}</h1>
-                    <p>Species: {character.species}</p>
-                    <p>Home Planet: {character.homeworld}</p>
-                    <div style={{display: 'flex', justifyContent: 'flex-start'}}>
+                    <h2>Species: {character.species}</h2>
+                    <h2>Home Planet: {character.homeworld}</h2>
                     {character.masters && (
-                        <ul>Masters</ul>
+                        <>
+                            <p>{character.name} was trained by {character.masters}</p>
+                        </>
                     )}
-                    </div>
                 </div>
             </div>
         </div>

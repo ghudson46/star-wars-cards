@@ -1,8 +1,9 @@
 import React from 'react';
 
-function ListItem({ name }) {
+function ListItem( { master } ) {
+    
     return (
-        <li>{name}</li>
+        <li>{master}</li>
     )
 }
 
