@@ -3,11 +3,6 @@ import './Card.css';
 
 
 function Card({ character }) {
-    function getMasters(list) {
-        list.map(master => {
-            return master
-        })
-    }
 
     return (
         <div class="flip-card">
@@ -22,7 +17,7 @@ function Card({ character }) {
                     <h2>{character.homeworld}</h2>
                     {character.masters && (
                         <>
-                            <p>{character.name} was trained by {character.masters}</p>
+                            <p>{character.name} was trained by {character.masters[0]}</p>
                         </>
                     )}
                 </div>
