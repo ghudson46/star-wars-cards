@@ -20,8 +20,8 @@ function Card({ character }) {
                     {character.masters && (
                         <div style={{display: 'flex', justifyContent: 'flex-start'}}>
                            <ul>Masters</ul>
-                           {[character.masters].map((master, i) => {
-                               return <li>{master}</li>
+                           {character.map((master, i) => {
+                               return <li>{master.master}</li>
                            })}
                         </div>
                     )}
