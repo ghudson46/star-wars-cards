@@ -17,7 +17,7 @@ function CardPDF({ character }) {
                 <div>
                     <ReactToPdf targetRef={ref} filename="SWcard.pdf">
                         {({ toPdf }) => (
-                            <button onClick={toPdf}>Export as PDF</button>
+                            <button onClick={toPdf} style={{backgroundColor: '#f9d71c', borderRadius: '5px', color: 'black', fontWeight: '800', marginTop: '2rem', marginBottom: '1rem', border: '1px solid black', cursor: 'pointer', padding: '.5rem'}}>Export as PDF</button>
                         )}
                     </ReactToPdf>
                     <div class="flip-card-front" ref={ref}>
