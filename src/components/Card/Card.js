@@ -1,8 +1,6 @@
 import React from 'react';
 import './Card.css';
 
-import ListItem from '../ListItem/ListItem';
-
 
 function Card({ character }) {
 
@@ -15,8 +13,8 @@ function Card({ character }) {
                 </div>
                 <div class="flip-card-back">
                     <h1>{character.name}</h1>
-                    <h2>Species: {character.species}</h2>
-                    <h2>Home Planet: {character.homeworld}</h2>
+                    <h2>{character.species}</h2>
+                    <h2>{character.homeworld}</h2>
                     {character.masters && (
                         <div style={{display: 'flex', justifyContent: 'flex-start'}}>
                            <ul>Masters</ul>
