@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { getCharacter, getAllCharacters } from '../Services/characters';
 
-import Card from '../components/Card/Card';
+import CardPDF from '../components/Card/CardPDF';
 
 function SearchForm() {
     const [searchValue, setSearchValue] = useState('');
@@ -50,7 +50,7 @@ function SearchForm() {
             <button style={{backgroundColor: '#f9d71c', borderRadius: '5px', color: 'black', fontWeight: '800', marginTop: '2rem', border: '1px solid black', cursor: 'pointer', padding: '.5rem'}} onClick={handleSubmit}>SEARCH</button>
             {starWarsData.map((character, i) => {
             if (character.name.trim().toLowerCase() === characterToDisplay) {
-                return <Card key={i} character={character} />
+                return <CardPDF key={i} character={character} />
             }
               return null;
             })}
