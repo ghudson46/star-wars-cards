@@ -11,15 +11,17 @@ function CardPDF({ character }) {
 
 
     return (
+        
         <div class="flip-card">
-            <div class="flip-card-inner">
-            <div />
-                <div>
-                    <ReactToPdf targetRef={ref} filename="SWcard.pdf">
+            <ReactToPdf targetRef={ref} filename="SWcard.pdf">
                         {({ toPdf }) => (
                             <button onClick={toPdf} style={{backgroundColor: '#f9d71c', borderRadius: '5px', color: 'black', fontWeight: '800', marginTop: '2rem', marginBottom: '1rem', border: '1px solid black', cursor: 'pointer', padding: '.5rem'}}>Export as PDF</button>
                         )}
-                    </ReactToPdf>
+                </ReactToPdf>
+            <div class="flip-card-inner">
+            <div />
+                <div>
+                   
                     <div class="flip-card-front" ref={ref}>
                     <img src={character.image} alt={character.name} />
                     <div className="overlay"><h1 className="front-text">{character.name}</h1></div>
