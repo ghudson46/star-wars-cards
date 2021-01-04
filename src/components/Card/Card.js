@@ -16,12 +16,9 @@ function Card({ character }) {
                     <h2>{character.species}</h2>
                     <h2>{character.homeworld}</h2>
                     {character.masters && (
-                        <div style={{display: 'flex', justifyContent: 'flex-start'}}>
-                           <ul>Masters</ul>
-                           {character.map((master, i) => {
-                               return <li>{master.master}</li>
-                           })}
-                        </div>
+                        <>
+                            <p>{character.name} was trained by {character.masters}</p>
+                        </>
                     )}
                 </div>
             </div>
