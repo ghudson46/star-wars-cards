@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/star-wars-cards/static/css/main.6aefcbf0.chunk.css",
-    "main.js": "/star-wars-cards/static/js/main.a1ab3adf.chunk.js",
-    "main.js.map": "/star-wars-cards/static/js/main.a1ab3adf.chunk.js.map",
+    "main.css": "/star-wars-cards/static/css/main.7bc5fdde.chunk.css",
+    "main.js": "/star-wars-cards/static/js/main.c998c537.chunk.js",
+    "main.js.map": "/star-wars-cards/static/js/main.c998c537.chunk.js.map",
     "runtime-main.js": "/star-wars-cards/static/js/runtime-main.5a0339cb.js",
     "runtime-main.js.map": "/star-wars-cards/static/js/runtime-main.5a0339cb.js.map",
     "static/js/2.8685f3a9.chunk.js": "/star-wars-cards/static/js/2.8685f3a9.chunk.js",
     "static/js/2.8685f3a9.chunk.js.map": "/star-wars-cards/static/js/2.8685f3a9.chunk.js.map",
     "index.html": "/star-wars-cards/index.html",
-    "static/css/main.6aefcbf0.chunk.css.map": "/star-wars-cards/static/css/main.6aefcbf0.chunk.css.map",
+    "static/css/main.7bc5fdde.chunk.css.map": "/star-wars-cards/static/css/main.7bc5fdde.chunk.css.map",
     "static/js/2.8685f3a9.chunk.js.LICENSE.txt": "/star-wars-cards/static/js/2.8685f3a9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5a0339cb.js",
     "static/js/2.8685f3a9.chunk.js",
-    "static/css/main.6aefcbf0.chunk.css",
-    "static/js/main.a1ab3adf.chunk.js"
+    "static/css/main.7bc5fdde.chunk.css",
+    "static/js/main.c998c537.chunk.js"
   ]
 }
